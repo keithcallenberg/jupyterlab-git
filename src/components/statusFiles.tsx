@@ -442,8 +442,8 @@ async function open_listed_file(typeX: string,typeY: string, path:string, app:Ju
       (fb as any)._listing._manager.openOrReveal(open_file_path+path);
     }
     else{
-      console.log("Cannot open a folder here")
-    }; 
+      console.log("Cannot open a folder here");
+    }
   }catch(err0){}
 }
 
@@ -521,7 +521,7 @@ function discard_UnstagedNode(file:string, path:string, refresh){
 
 //functions for untracked nodes
 function add_all_UntrackedNode(path:string,refresh){
-  console.log('add all untracked')
+  console.log('add all untracked');
   let git_temp = new Git();
   git_temp.add_all_untracked(path).then(response=>{
     refresh();
