@@ -45,7 +45,7 @@ const plugin: JupyterLabPlugin<IGitExtension> = {
  */
 export default plugin;
 
-export const EXTENSION_ID = 'jupyter.extensions.git_plugin'
+export const EXTENSION_ID = 'jupyter.extensions.git_plugin';
 
 export const IGitExtension = new Token<IGitExtension>(EXTENSION_ID);
 
